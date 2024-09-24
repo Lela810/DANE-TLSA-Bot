@@ -9,5 +9,5 @@ sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dane-tlsa-bot.sh
 sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dnsconfig.js.original
 
 echo "Initial setup complete"
-cron -f
+sudo cron -f
 #bash /app/dane-tlsa-bot.sh
