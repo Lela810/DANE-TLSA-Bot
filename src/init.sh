@@ -8,6 +8,10 @@ sed -i "s/ROOTDOMAIN/$DOMAIN/g" dane-tlsa-bot.sh
 sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dane-tlsa-bot.sh
 sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dnsconfig.js.original
 
+if [[ $WORKINGMODE = "prod" ]]; then
+    touch .prod
+fi
+
 sudo touch /var/log/cron.log
 
 echo "Initial setup complete"

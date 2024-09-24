@@ -14,8 +14,8 @@ cp /app/dnsconfig.js.original dnsconfig.js
 sed -i "s/HASH/$shaSum/g" dnsconfig.js
 echo "DNS update in progress"
 dnscontrol ppreview
-echo $WORKINGMODE
-if [[ $WORKINGMODE = "prod" ]]; then
+
+if [[ -f .prod ]]; then
     dnscontrol push
 fi
 
