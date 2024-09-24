@@ -18,6 +18,6 @@ RUN sudo crontab /etc/cronjob
 
 WORKDIR /app
 
-CMD ["cron", "-f"]
-#ENTRYPOINT [ "bash" ]
+#CMD ["cron", "-f"]
+ENTRYPOINT [ "bash" ]
 
