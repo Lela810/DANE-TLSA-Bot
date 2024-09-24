@@ -1,2 +1,3 @@
+PATH=/usr/local/bin:/usr/bin:/bin
 @reboot bash /app/init.sh > /proc/1/fd/1 2>/proc/1/fd/2
 */1 * * * * bash cd /app/dane-tlsa-bot.sh > /proc/1/fd/1 2>/proc/1/fd/2
