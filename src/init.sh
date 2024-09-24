@@ -14,4 +14,4 @@ crontab mycron
 rm mycron
 
 echo "Initial setup complete"
-bash dane-tlsa-bot.sh
+bash /app/dane-tlsa-bot.sh
