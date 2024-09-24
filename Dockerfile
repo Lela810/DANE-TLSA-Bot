@@ -1,4 +1,4 @@
-FROM dnscontrol:latest
+FROM stackexchange/dnscontrol:latest
 
 WORKDIR /app
 
