@@ -1,7 +1,10 @@
-version: '3.3'
 services:
   web:
     container_name: DANE-TLSA-Bot
     image: ghcr.io/lela810/dane-tlsa-bot:latest
     restart: unless-stopped
-    env_file: '.env'
+    environment:
+      CFTOKEN:
+      CFUID:
+      DOMAIN:
+      MAILSUBDOMAIN:
