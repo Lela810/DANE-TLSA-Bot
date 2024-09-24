@@ -14,7 +14,7 @@ RUN chmod -R 0744 /app
 RUN chown -R root:root /app
 
 ADD src/cronjob /etc/cronjob
-RUN crontab /etc/cronjob
+RUN sudo crontab /etc/cronjob
 
 WORKDIR /app
 
