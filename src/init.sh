@@ -6,3 +6,11 @@ sed -i "s/ROOTDOMAIN/$DOMAIN/g" dnsconfig.js.original
 sed -i "s/ROOTDOMAIN/$DOMAIN/g" dane-tlsa-bot.sh
 sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dane-tlsa-bot.sh
 sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dnsconfig.js.original
+
+crontab -l > mycron
+echo "*/1 * * * * echo hello" >> mycron
+crontab mycron
+rm mycron
+
+echo "Initial setup complete"
+bash dane-tlsa-bot.sh
