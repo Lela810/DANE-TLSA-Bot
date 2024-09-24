@@ -1,1 +1,8 @@
 # DANE-TLSA-Bot
+
+Docker ENV-Variables to define:
+
+CFTOKEN
+CFUID
+DOMAIN
+MAILSUBDOMAIN
