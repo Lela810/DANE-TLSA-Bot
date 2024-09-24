@@ -10,3 +10,5 @@ RUN chmod +x /app/dane-tlsa-bot.sh
 
 WORKDIR /app
 
+ENTRYPOINT [ "/bin/sh" ]
+

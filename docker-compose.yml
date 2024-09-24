@@ -2,7 +2,7 @@ version: '3.3'
 services:
   web:
     container_name: DANE-TLSA-Bot
-    image: ghcr.io/lelandg/dane-tlsa-bot:latest
+    image: ghcr.io/lela810/dane-tlsa-bot:latest
     restart: unless-stopped
     environment:
       - CFTOKEN=o2XKwM6A695HEXQVhGwvbiR0L0kVfFHfAVHufMqx
