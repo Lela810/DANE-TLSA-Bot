@@ -7,6 +7,6 @@ D(
 	REG_NONE,
 	NO_PURGE,
 	DnsProvider(DSP_CLOUDFLARE),
-	TXT('_25._tcp', 'HASH'),
+	TXT('_25._tcp.mail', 'HASH'),
 	END
 );
