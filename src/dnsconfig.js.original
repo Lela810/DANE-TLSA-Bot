@@ -7,6 +7,6 @@ D(
 	REG_NONE,
 	NO_PURGE,
 	DnsProvider(DSP_CLOUDFLARE),
-	TLSA('_25._tcp.mail', 3, 1, 1, 'HASH'),
+	TLSA('_25._tcp.mail', 3, 1, 1, 'HASH', TTL(3600)),
 	END
 );
