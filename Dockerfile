@@ -6,9 +6,9 @@ RUN brew install dnscontrol
 
 COPY src /app
 
-RUN chmod +x /app/dane-tlsa-bot.sh
-RUN chmod +x /app/init.sh
-RUN chmod -R 0744 /app 
+RUN sudo chmod +x /app/dane-tlsa-bot.sh
+RUN sudo chmod +x /app/init.sh
+RUN sudo chmod -R 0744 /app 
 #RUN chown -R root:root /app
 
 ADD src/cronjob /etc/cronjob
