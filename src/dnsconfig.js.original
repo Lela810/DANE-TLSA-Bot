@@ -3,7 +3,7 @@ var DSP_CLOUDFLARE = NewDnsProvider('cloudflare');
 
 // Example domain where the CF proxy abides by the default (off).
 D(
-	'DOMAIN',
+	'ROOTDOMAIN',
 	REG_NONE,
 	NO_PURGE,
 	DnsProvider(DSP_CLOUDFLARE),
