@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /app
 echo "Starting DANE-TLSA Bot"
 sed -i "s/apiTokenReplace/$CFTOKEN/g" creds.json
 sed -i "s/accountIDReplace/$CFUID/g" creds.json
