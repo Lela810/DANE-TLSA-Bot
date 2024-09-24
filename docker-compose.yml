@@ -1,10 +1,11 @@
 services:
   web:
     container_name: DANE-TLSA-Bot
-    image: ghcr.io/lela810/dane-tlsa-bot:latest
+    image: ghcr.io/lela810/dane-tlsa-bot:main
     restart: unless-stopped
     environment:
       CFTOKEN:
       CFUID:
       DOMAIN:
       MAILSUBDOMAIN:
+      WORKINGMODE: prod / dev
