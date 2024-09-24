@@ -8,6 +8,8 @@ sed -i "s/ROOTDOMAIN/$DOMAIN/g" dane-tlsa-bot.sh
 sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dane-tlsa-bot.sh
 sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dnsconfig.js.original
 
+sudo touch /var/log/cron.log
+
 echo "Initial setup complete"
-sudo cron -f
+sudo sudo cron && sudo tail -f /var/log/cron.log
 #bash /app/dane-tlsa-bot.sh
