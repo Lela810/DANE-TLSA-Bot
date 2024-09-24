@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 cd /app
 echo "Running DANE-TLSA update"
 rm dnsconfig.js sha256sum.txt certificate.pem certificate.der

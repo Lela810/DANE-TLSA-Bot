@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 cd /app
 echo "Starting DANE-TLSA Bot"
 sed -i "s/apiTokenReplace/$CFTOKEN/g" creds.json
@@ -9,4 +9,4 @@ sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dane-tlsa-bot.sh
 sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dnsconfig.js.original
 
 echo "Initial setup complete"
-bash /app/dane-tlsa-bot.sh
+#bash /app/dane-tlsa-bot.sh
