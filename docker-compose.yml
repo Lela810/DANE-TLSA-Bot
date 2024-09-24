@@ -2,8 +2,7 @@ version: '3.3'
 services:
   web:
     container_name: DANE-TLSA-Bot
-    build:
-      dockerfile: Dockerfile
+    image: ghcr.io/lelandg/dane-tlsa-bot:latest
     restart: unless-stopped
     environment:
-      - MONGODB=${MONGODB}
+      - CFTOKEN=o2XKwM6A695HEXQVhGwvbiR0L0kVfFHfAVHufMqx
