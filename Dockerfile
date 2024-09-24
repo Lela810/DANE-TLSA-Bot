@@ -11,6 +11,7 @@ COPY src /app
 RUN chmod +x /app/dane-tlsa-bot.sh
 RUN chmod +x /app/init.sh
 RUN chmod -R 0744 /app 
+RUN chown -R root:root /app
 
 ADD src/cronjob /etc/cronjob
 RUN crontab /etc/cronjob
