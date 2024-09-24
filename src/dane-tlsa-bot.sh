@@ -3,4 +3,5 @@ openssl x509 -in <(openssl s_client -connect MAILSERVER:25 -starttls smtp -prexi
 openssl x509 -in certificate.pem -pubkey -noout | openssl ec -pubin -outform der -out certificate.der
 sh -c 'sha256sum < "certificate.der" | cut -d" " -f1' -- "$file" > sha256sum.txt
 shaSum=`cat sha256sum.txt`
+cp dnsconfig.js.original dnsconfig.js
 sed -i "s/HASH/$shaSum/g" dnsconfig.js
