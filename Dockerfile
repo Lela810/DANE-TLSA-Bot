@@ -8,7 +8,7 @@ COPY src /app
 
 RUN sudo chmod +x /app/dane-tlsa-bot.sh
 RUN sudo chmod +x /app/init.sh
-RUN sudo chmod -R 0744 /app 
+RUN sudo chmod -R 777 /app 
 #RUN chown -R root:root /app
 
 ADD src/cronjob /etc/cronjob
@@ -16,6 +16,6 @@ RUN sudo crontab /etc/cronjob
 
 WORKDIR /app
 
-#CMD ["cron", "-f"]
-ENTRYPOINT [ "bash" ]
+CMD ["/app/init.sh"]
+#ENTRYPOINT [ "bash" ]
 
