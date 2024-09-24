@@ -8,7 +8,7 @@ sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dane-tlsa-bot.sh
 sed -i "s/MAILSUBDOMAIN/$MAILSUBDOMAIN/g" dnsconfig.js.original
 
 crontab -l > mycron
-echo "*/1 * * * * echo hello" >> mycron
+echo "*/1 * * * * bash /app/dane-tlsa-bot.sh" >> mycron
 crontab mycron
 rm mycron
 

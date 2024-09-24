@@ -9,4 +9,4 @@ cp dnsconfig.js.original dnsconfig.js
 sed -i "s/HASH/$shaSum/g" dnsconfig.js
 dnscontrol ppreview
 
-echo "DNAE-TLSA update complete"
+echo "DANE-TLSA update complete"
