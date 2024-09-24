@@ -1,17 +1,9 @@
 version: '3.3'
 services:
   web:
-    container_name: GIBZMensaAPI
-    image: ghcr.io/lela810/gibzmensa:main
-    ports:
-      - '8080:8080'
+    container_name: DANE-TLSA-Bot
+    build:
+      dockerfile: Dockerfile
     restart: unless-stopped
     environment:
       - MONGODB=${MONGODB}
-    healthcheck:
-      test: ['CMD', 'node', '/app/services/healthcheck.js']
-      interval: 1m
-      timeout: 10s
-      retries: 0
-    labels:
-      - com.centurylinklabs.watchtower.enable=false
