@@ -1,5 +1,5 @@
 services:
-  web:
+  bot1:
     container_name: DANE-TLSA-Bot
     image: ghcr.io/lela810/dane-tlsa-bot:main
     restart: unless-stopped
