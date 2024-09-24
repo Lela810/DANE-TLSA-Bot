@@ -13,6 +13,6 @@ RUN chmod +x /app/init.sh
 
 WORKDIR /app
 
-#ENTRYPOINT [ "/app/init.sh" ]
-ENTRYPOINT [ "bash" ]
+ENTRYPOINT [ "/app/init.sh" ]
+#ENTRYPOINT [ "bash" ]
 
