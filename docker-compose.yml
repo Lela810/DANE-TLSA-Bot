@@ -8,4 +8,5 @@ services:
       CFUID:
       DOMAIN:
       MAILSUBDOMAIN:
+      MAILSERVER:
       WORKINGMODE: prod / dev
