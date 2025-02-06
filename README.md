@@ -11,5 +11,5 @@ DOMAIN: Domain part of you Mailserver (example.com)
 
 MAILSUBDOMAIN: Subdomain part of you Mailserver (mail)
 
-WORKINGMODE: "prod" or "dev"
+WORKINGMODE: "prod" to enable Changes in DNS
 
