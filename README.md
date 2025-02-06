@@ -9,7 +9,7 @@ CFUID: Your Cloudflare Zone ID
 
 DOMAIN: Domain part of you Mailserver (example.com)
 
-MAILSUBDOMAIN: Subdomain part of you Mailserver (mail.)
+MAILSUBDOMAIN: Subdomain part of you Mailserver (mail)
 
 WORKINGMODE: "prod" or "dev"
 
